@@ -2,12 +2,12 @@
   "name": "aquelia-backend",
   "version": "1.0.0",
   "description": "Aquelia Backend API",
-  "main": "hono.ts",
+  "main": "server.ts",
   "scripts": {
     "dev": "bun run hono.ts",
-    "start": "bun run hono.ts",
+    "start": "bun run server.ts",
     "build": "echo 'No build step needed for Bun'",
-    "deploy": "bun run hono.ts"
+    "deploy": "bun run server.ts"
   },
   "dependencies": {
     "hono": "^4.0.0",
