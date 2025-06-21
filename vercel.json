@@ -1,13 +1,18 @@
 {
-  "buildCommand": "expo export -p web",
-  "outputDirectory": "dist",
-  "devCommand": "expo",
-  "cleanUrls": true,
-  "framework": null,
-  "rewrites": [
+  "version": 2,
+  "builds": [
     {
-      "source": "/:path*",
-      "destination": "/"
+      "src": "backend/server.ts",
+      "use": "@vercel/node"
     }
-  ]
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/backend/server.ts"
+    }
+  ],
+  "env": {
+    "NODE_ENV": "production"
+  }
 }

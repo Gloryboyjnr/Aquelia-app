@@ -2,12 +2,11 @@
   "name": "aquelia-backend",
   "version": "1.0.0",
   "description": "Aquelia Backend API",
-  "main": "server.ts",
+  "main": "server-node.js",
   "scripts": {
     "dev": "bun run hono.ts",
-    "start": "bun run server.ts",
-    "build": "echo 'No build step needed for Bun'",
-    "deploy": "bun run server.ts"
+    "start": "node server-node.js",
+    "build": "echo 'No build step needed'"
   },
   "dependencies": {
     "hono": "^4.0.0",
@@ -22,8 +21,7 @@
     "bun-types": "latest"
   },
   "engines": {
-    "node": ">=18.0.0",
-    "bun": ">=1.0.0"
+    "node": ">=18.0.0"
   },
   "keywords": ["api", "backend", "trpc", "hono"],
   "author": "Aquelia Team",
