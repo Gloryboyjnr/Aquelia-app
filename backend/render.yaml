@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: aquelia-backend
+    env: bun
+    buildCommand: echo "No build step needed for Bun"
+    startCommand: bun run hono.ts
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+    healthCheckPath: /api/health
+    autoDeploy: true 

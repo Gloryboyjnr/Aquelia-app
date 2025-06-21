@@ -1,0 +1,31 @@
+{
+  "name": "aquelia-backend",
+  "version": "1.0.0",
+  "description": "Aquelia Backend API",
+  "main": "hono.ts",
+  "scripts": {
+    "dev": "bun run hono.ts",
+    "start": "bun run hono.ts",
+    "build": "echo 'No build step needed for Bun'",
+    "deploy": "bun run hono.ts"
+  },
+  "dependencies": {
+    "hono": "^4.0.0",
+    "@hono/trpc-server": "^0.1.0",
+    "@trpc/server": "^11.0.0",
+    "zod": "^3.22.0",
+    "superjson": "^2.2.0",
+    "@prisma/client": "^6.10.1"
+  },
+  "devDependencies": {
+    "prisma": "^6.10.1",
+    "bun-types": "latest"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "bun": ">=1.0.0"
+  },
+  "keywords": ["api", "backend", "trpc", "hono"],
+  "author": "Aquelia Team",
+  "license": "MIT"
+} 

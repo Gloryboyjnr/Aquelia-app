@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "module": "CommonJS",
+    "target": "ES2019",
+    "outDir": "backend/dist",
+    "esModuleInterop": true,
+    "moduleResolution": "Node",
+    "allowJs": true,
+    "resolveJsonModule": true
+  },
+  "include": [
+    "backend/**/*.ts"
+  ]
+} 
