@@ -18,10 +18,5 @@
   ],
   "env": {
     "NODE_ENV": "production"
-  },
-  "functions": {
-    "backend/hono.ts": {
-      "maxDuration": 30
-    }
   }
 }
