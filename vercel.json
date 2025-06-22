@@ -2,17 +2,26 @@
   "version": 2,
   "builds": [
     {
-      "src": "backend/server.ts",
+      "src": "backend/hono.ts",
       "use": "@vercel/node"
     }
   ],
   "routes": [
     {
+      "src": "/api/(.*)",
+      "dest": "/backend/hono.ts"
+    },
+    {
       "src": "/(.*)",
-      "dest": "/backend/server.ts"
+      "dest": "/backend/hono.ts"
     }
   ],
   "env": {
     "NODE_ENV": "production"
+  },
+  "functions": {
+    "backend/hono.ts": {
+      "maxDuration": 30
+    }
   }
 }
